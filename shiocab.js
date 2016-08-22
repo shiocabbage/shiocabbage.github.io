@@ -3,24 +3,21 @@ $(document).ready(
 function ()
 {
 	
-	var shiocabtoggle="shiocab.toggle";
+	var shiocabtoggle=".shiocab-toggle";
 	var i = 0 ;
 	//alert($(shiocabtoggle).length);
-	while($(shiocabtoggle/* + ":not(.parents(pre,code)"*/).length>0)
+	while($(shiocabtoggle).length>0)
 	{
-		var obj = $("body").find(shiocabtoggle/* + ":not($(this).parents(pre,code)"*/);
-		//alert(i);
-		//alert($(obj).html());
-
+		var obj = $("body").find(shiocabtoggle);
 		$(obj).each(
-
 		function (){
-			//alert($(this).html());
+			//alert($(this).prop('outerHTML'));
+			$(this).removeClass("shiocab-toggle");
+			var htmlTxt = $(this).prop('outerHTML');
 			var source = $(this).attr("value");
 			var btnCls = $(this).attr("ButtonClass");
 			var ctnCls = $(this).attr("ContentClass");
 			var func = $(this).attr("Function");
-			//alert($(this).html());
 
 			if(source == undefined)
 			{
@@ -41,7 +38,7 @@ function ()
 			{
 				func = "javascript:slideToggle()";
 			}
-			//alert($(this).html() + ":35");
+
 			var kekka = source.split("|");
 			var id = "shiocab_toggle"+ i +"";
 			//var str;
@@ -66,7 +63,7 @@ function ()
 					function: func,
 					id: id
 				},
-				$(this).html()
+				htmlTxt
 			);
 			//alert(text);
 			text += "</div>";
