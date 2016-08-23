@@ -10,7 +10,7 @@ Sure, if you don't download, you can use them by coding following passages,
 in ``` <head>~</head>```.
 
 ##BUT they are working by USING "jQuery".
-So, you must download to use them at <a>https://jquery.com/</a>
+So, you must download javascript file to use them from <a>https://jquery.com/</a>.
 
 ```html
 <div class="shiocab-toggle">Content</div>
