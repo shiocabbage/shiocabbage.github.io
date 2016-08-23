@@ -1,3 +1,5 @@
+<div align="center"><h1>INTRODUCTION</h1></div>
+
 "shiocab project" is the project run by "shiocabbage(塩キャベツ)", GitHub user, to make creating easier just a little.
 
 You can watch scripts of "shiocab project" page.
@@ -12,6 +14,6 @@ in ``` <head>~</head>```.
 ##BUT they are working by USING "jQuery".
 So, you must download javascript file to use them from <a>https://jquery.com/</a>.
 
-I'm so glad if you use.
+I'm so glad you reading this introducion.
 
 Thank you.
