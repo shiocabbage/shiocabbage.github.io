@@ -16,6 +16,7 @@ function ()
 			$(this).removeClass("shiocab-toggle");
 			$(this).addClass("shiocab_toggle");
 			$(this).css("display","none");
+			var styl = $(this).attr("style");
 			
 			var source = $(this).attr("value");
 			var btnCls = $(this).attr("ButtonClass");
@@ -41,7 +42,6 @@ function ()
 				""
 			);
 
-			var styl = $(this).attr("style");
 			var html = $(this).prop('outerHTML');
 			text += returnString(
 				"button",
