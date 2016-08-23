@@ -14,24 +14,25 @@ function ()
 		function ()
 		{
 			$(this).removeClass("shiocab-toggle");
-			var html = $(this).prop('outerHTML');
+			$(this).addClass("shiocab_toggle");
+			$(this).css("display","none");
+			
 			var source = $(this).attr("value");
 			var btnCls = $(this).attr("ButtonClass");
-			var styl = $(this).attr("style");
+			
 			var clss = $(this).attr("class");
+			var id = $(this).attr("id");
 			
 			//alert(html);
 			if(source == undefined){source = "Open|Close";}
 			if(btnCls == undefined){btnCls = "";}
 			if(styl == undefined){styl = "";}
 			if(clss == undefined){clss = "";}
+			if(id == undefined){id = "shiocab_toggle"+ i +"";$(this).attr("class",id);}
 
 			var kekka = source.split("|");
-			var id = "shiocab_toggle"+ i +"";
-
-			var text = "<div>";
-
-			text = returnString(
+			
+			var text = returnString(
 				"div",
 				{
 					class: clss,
@@ -39,6 +40,9 @@ function ()
 				},
 				""
 			);
+
+			var styl = $(this).attr("style");
+			var html = $(this).prop('outerHTML');
 			text += returnString(
 				"button",
 				{
@@ -50,15 +54,7 @@ function ()
 				0
 			);
 			//alert(text);
-			text += returnString(
-				"div",
-				{
-					class: " shiocab_toggle",
-					style: "display:none;",
-					id: id
-				},
-				html
-			);
+			text += html
 			//alert(text);
 			text += "</div>";
 
@@ -90,18 +86,15 @@ function ()
 		{
 			var getId = $(this).attr("id");
 			var source = $(this).attr("value");
-			//var func = $(this).attr("function");
-			//var func_name = $(this).attr("function");
 			var kekka = source.split("|");
-			//alert(source);
-			if($("div#" + getId).css("display") != "none")
+			//alert($("." + getId).not("button").html());
+			if($("." + getId).not("button").css("display") != "none")
 			{
 				$(this).html(kekka[0]);
 			}else{
 				$(this).html(kekka[1]);
 			}
-			$("div#" + getId).slideToggle();
-			//alert(func);
+			$("." + getId).not("button").slideToggle();
 		}
 	);
 });
