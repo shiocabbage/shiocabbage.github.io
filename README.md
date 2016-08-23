@@ -11,7 +11,8 @@ in ``` <head>~</head>```.
 
 ##BUT they are working by USING "jQuery".
 So, you must download javascript file to use them from <a>https://jquery.com/</a>.
-
+<link rel="stylesheet" type="text/css" href="https://shiocabbage.github.io/shiocab.css">
+<scirpt src="shiocab.js"></script>
 ```html
 <div class="shiocab-toggle">Content</div>
 ```
