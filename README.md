@@ -11,6 +11,9 @@ in ``` <head>~</head>```.
 
 ##BUT they are working by USING "jQuery".
 So, you must download javascript file to use them from <a>https://jquery.com/</a>.
+
+<div align="center">====From here, How to use====</div>
+
 <link rel="stylesheet" type="text/css" href="https://shiocabbage.github.io/shiocab.css">
 <scirpt src="shiocab.js"></script>
 ```html
