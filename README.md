@@ -7,7 +7,7 @@ Also, you can download "shiocab.js" and "shiocab.css" except "jquery-3.1.0.min.j
 Sure, if you don't download, you can use them by coding following passages,
 ```html
 <link rel="https://shiocabbage.github.io/shiocab.css">
-<script src="https://shiocabbage.github.io/shiocab.js">
+<script src="https://shiocabbage.github.io/shiocab-1.0.js">
 ```
 in ``` <head>~</head>```.
 
