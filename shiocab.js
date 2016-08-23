@@ -21,7 +21,7 @@ function ()
 			var source = $(this).attr("value");
 			var btnCls = $(this).attr("ButtonClass");
 			
-			var clss = $(this).attr("class");
+			var clss = $(this).attr("BackgroundClass");
 			var id = $(this).attr("id");
 			
 			//alert(html);
