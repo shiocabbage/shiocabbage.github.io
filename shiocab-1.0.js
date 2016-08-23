@@ -81,7 +81,7 @@ function ()
 		return str;
 	}
 
-	$("button.shiocab_toggle").click(
+	$("div.shiocab_toggle").click(
 		function () 
 		{
 			var getId = $(this).attr("id");
