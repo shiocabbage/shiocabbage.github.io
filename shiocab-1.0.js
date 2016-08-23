@@ -44,7 +44,7 @@ function ()
 
 			var html = $(this).prop('outerHTML');
 			text += returnString(
-				"button",
+				"div",
 				{
 					class: btnCls + " shiocab_toggle",
 					value: source,
