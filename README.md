@@ -3,6 +3,6 @@
 You can watch scripts of "shiocab project" page.
 Also, you can download "shiocab.js" and "shiocab.css" and use for your website.
 
->|html|
+```html
 <div class="shiocab-toggle"></div>
-||<
+```
