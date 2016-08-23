@@ -12,7 +12,7 @@ Sure, if you don't download, you can use them by coding following passages,
 in ``` <head>~</head>```.
 
 ##BUT they are working by USING "jQuery".
-So, you must download javascript file to use them from <a>https://jquery.com/</a>.
+So, you must download javascript file to use them from <a>https://jquery.com/</a> and you must link to "jQuery source" before you use them.
 
 I'm so glad you reading this introducion.
 
