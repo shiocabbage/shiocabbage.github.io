@@ -7,7 +7,7 @@ Sure, if you don't download, you can use them by coding following passages,
 <link rel="https://shiocabbage.github.io/shiocab.css">
 <script src="https://shiocabbage.github.io/shiocab.js">
 ```
-in <head>~</head>
+in ```<head>~</head>```
 ```html
 <div class="shiocab-toggle">Content</div>
 ```
