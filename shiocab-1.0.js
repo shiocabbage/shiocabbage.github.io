@@ -14,7 +14,7 @@ function ()
 		function ()
 		{
 			$(this).removeClass("shiocab-toggle");
-			$(this).addClass("shiocab_toggle");
+			//$(this).addClass("shiocab_toggle");
 			
 			var styl = $(this).attr("BackgroundStyle");
 			$(this).css("display","none");
