@@ -3,55 +3,47 @@ $(document).ready(
 function ()
 {
 	
-	var shiocabtoggle="shiocab.toggle";
+	var shiocabtoggle=".shiocab-toggle";
 	var i = 0 ;
-	//alert($(shiocabtoggle).length);
-	while($(shiocabtoggle/* + ":not(.parents(pre,code)"*/).length>0)
+	while($(shiocabtoggle).length>0)
 	{
-		var obj = $("body").find(shiocabtoggle/* + ":not($(this).parents(pre,code)"*/);
-		//alert(i);
-		//alert($(obj).html());
+		var obj = $("body").find(shiocabtoggle);
 
 		$(obj).each(
 
-		function (){
-			//alert($(this).html());
+		function ()
+		{
+			$(this).removeClass("shiocab-toggle");
+			var html = $(this).prop('outerHTML');
 			var source = $(this).attr("value");
 			var btnCls = $(this).attr("ButtonClass");
-			var ctnCls = $(this).attr("ContentClass");
-			var func = $(this).attr("Function");
-			//alert($(this).html());
+			var styl = $(this).attr("style");
+			var clss = $(this).attr("class");
+			
+			//alert(html);
+			if(source == undefined){source = "Open|Close";}
+			if(btnCls == undefined){btnCls = "";}
+			if(styl == undefined){styl = "";}
+			if(clss == undefined){clss = "";}
 
-			if(source == undefined)
-			{
-				source = "Open|Close";
-			}
-
-			if(btnCls == undefined)
-			{
-				btnCls = "";
-			}
-
-			if(ctnCls == undefined)
-			{
-				ctnCls = "";
-			}
-
-			if(func == undefined)
-			{
-				func = "javascript:slideToggle()";
-			}
-			//alert($(this).html() + ":35");
 			var kekka = source.split("|");
 			var id = "shiocab_toggle"+ i +"";
-			//var str;
+
 			var text = "<div>";
+
+			text = returnString(
+				"div",
+				{
+					class: clss,
+					style: styl
+				},
+				""
+			);
 			text += returnString(
 				"button",
 				{
 					class: btnCls + " shiocab_toggle",
 					value: source,
-					//function: func,
 					id: id
 				},
 				kekka[0],
@@ -61,12 +53,11 @@ function ()
 			text += returnString(
 				"div",
 				{
-					class: ctnCls + " shiocab_toggle",
+					class: " shiocab_toggle",
 					style: "display:none;",
-					function: func,
 					id: id
 				},
-				$(this).html()
+				html
 			);
 			//alert(text);
 			text += "</div>";
