@@ -34,7 +34,7 @@ function ()
 			var kekka = source.split("|");
 			
 			var text = returnString(
-				"button",
+				"div",
 				{
 					class: clss,
 					style: styl
@@ -44,7 +44,7 @@ function ()
 
 			var html = $(this).prop('outerHTML');
 			text += returnString(
-				"div",
+				"button",
 				{
 					class: btnCls + " shiocab_toggle",
 					value: source,
