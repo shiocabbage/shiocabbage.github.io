@@ -34,7 +34,7 @@ function ()
 			var kekka = source.split("|");
 			
 			var text = returnString(
-				"div",
+				"button",
 				{
 					class: clss,
 					style: styl
@@ -81,7 +81,7 @@ function ()
 		return str;
 	}
 
-	$("div.shiocab_toggle").click(
+	$("button.shiocab_toggle").click(
 		function () 
 		{
 			var getId = $(this).attr("id");
