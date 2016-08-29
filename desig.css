@@ -148,4 +148,10 @@ ul#contacts
 	{
 		height: 100%;
 	}
+	
+	#header div#title .child
+	{
+		font-size: 25pt;
+	/*font-size: 32pt;*/
+	}
 }
