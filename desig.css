@@ -61,6 +61,7 @@ input, button, textarea, select {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
+	font-size: 32pt;
 	/*width:250px;*/
 	height:100%;
 	margin: 0px;
